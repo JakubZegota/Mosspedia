@@ -36,6 +36,7 @@
     border-color: rgb(240, 230, 220);
     align-self: auto;
     transition: background-color 0.5s, color 0.5s;
+    display: inline-block;
 
 }
 
@@ -64,4 +65,35 @@ h1 {
 body {
     background-color: rgb(20, 15, 0);
     color: rgb(240, 230, 220);
-} 
+}
+
+.video {
+    vertical-align: top;
+    display: inline-block;
+    margin: 50px 5px 0 5px;
+}
+
+.video-channel {
+    vertical-align: top;
+    display: inline-block;
+    width: 50px;
+}
+
+.video-title {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+}
+
+.thumbnail {
+    border-radius: 10%;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.video-container{
+   margin: 0 200px 0 200px;
+}
