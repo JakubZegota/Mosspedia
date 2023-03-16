@@ -26,6 +26,15 @@
     text-decoration: underline;
 }
 
+.green-button-current{
+    color: rgb(240, 230, 220);
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    background-color: rgb(10, 80, 25);
+    text-decoration: underline;
+}
+
 .normal-button {
     background-color: (20, 15, 0);
     color: rgb(240, 230, 220);
@@ -67,33 +76,23 @@ body {
     color: rgb(240, 230, 220);
 }
 
-.video {
-    vertical-align: top;
-    display: inline-block;
-    margin: 50px 5px 0 5px;
+
+.content-container {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
 }
 
-.video-channel {
-    vertical-align: top;
-    display: inline-block;
-    width: 50px;
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    
+    transition: color 0.5s;
 }
 
-.video-title {
-    display: inline-block;
-    text-align: center;
-    width: 250px;
-}
-
-.thumbnail {
-    border-radius: 10%;
-}
-
-.profile-pic {
-    width: 100%;
-    border-radius: 100%;
-}
-
-.video-container{
-   margin: 0 200px 0 200px;
+.grid-item:hover{
+    color: rgb(240, 230, 220);
 }
