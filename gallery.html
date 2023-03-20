@@ -4,7 +4,7 @@
 <head>
     <meta charset=“UTF-8”>
 
-    <link href="Resources/stylepage.css" rel="stylesheet"/>
+    <link href="Resources/stylepage.css" rel="stylesheet" />
     <title>Mosspedia</title>
 </head>
 
@@ -21,8 +21,23 @@
 
     <article>
         <h1>Gallery</h1>
-    </article>
+    
 
+    <div class="gallery">
+        <div class="column">
+            <img class="gallery-img" src="Gallery/mosscloseup.jpg" alt="mosscloseup.jpg" onclick="showfullpicture('mosscloseup.jpg', 'Moss in close-up')">
+            <img class="gallery-img"  src="Gallery/mosscloseup2.jpg" alt="mosscloseup2.jpg" onclick="showfullpicture('mosscloseup2.jpg', 'Moss in close-up')">
+        </div>
+        <div class="column">
+            <img class="gallery-img"  src="Gallery/mossgarden.jpg" alt="mossgarden.jpg" onclick="showfullpicture('mossgarden.jpg', 'Moss garden')">
+            <img class="gallery-img"  src="Gallery/mossgarden2.jpg" alt="mossgarden2.jpg" onclick="showfullpicture('mossgarden.jpg', 'Moss garden')">
+        </div>
+
+    </div>
+
+</article>
+    <script src="index.js"></script>
 
 </body>
+
 </html>

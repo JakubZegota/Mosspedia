@@ -26,7 +26,7 @@
     text-decoration: underline;
 }
 
-.green-button-current{
+.green-button-current {
     color: rgb(240, 230, 220);
     font-size: 20px;
     border: none;
@@ -52,6 +52,48 @@
 .normal-button:hover {
     background-color: rgb(10, 80, 25);
 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-screen-image {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-description {
+    font-size: 40px;
+    position: absolute;
+    left: 200px;
+    justify-content: center;
+    color: rgb(240, 230, 220);
+}
+
+.gallery-img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 100px;
+    cursor: pointer;
+
+}
+
+.column {
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -89,10 +131,10 @@ body {
     align-items: center;
     justify-content: center;
     color: transparent;
-    
+
     transition: color 0.5s;
 }
 
-.grid-item:hover{
+.grid-item:hover {
     color: rgb(240, 230, 220);
 }
