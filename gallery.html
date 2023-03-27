@@ -15,27 +15,22 @@
         <a href="whymosses.html"><button class="green-button">Why mosses</button></a>
         <button class="green-button-current">Gallery</button>
         <a href="usefullinks.html"><button class="green-button">Useful links</button></a>
-        <button class="green-button" style="margin-left: auto;">Search</button>
+        <div style="margin-left:auto">
+        <input id="searchInput" type="text"/>
+        <button class="green-button" onclick="searchWebsite()">Search</button>
+        <script src="search.js"></script>
+        </div>
     </div>
 
     <article>
         <h1>Gallery</h1>
-    
 
-    <div id="galery-container" class="gallery">
-        <!-- <div class="column">
-            <img class="gallery-img" src="Gallery/mosscloseup.jpg" alt="mosscloseup.jpg" onclick="showfullpicture('mosscloseup.jpg', 'Moss in close-up')">
-            <img class="gallery-img"  src="Gallery/mosscloseup2.jpg" alt="mosscloseup2.jpg" onclick="showfullpicture('mosscloseup2.jpg', 'Another moss in close-up')">
+        <div id="galery-container" class="gallery">
+            <!-- The container for the photos -->
         </div>
-        <div class="column">
-            <img class="gallery-img"  src="Gallery/mossgarden.jpg" alt="mossgarden.jpg" onclick="showfullpicture('mossgarden.jpg', 'Moss garden')">
-            <img class="gallery-img"  src="Gallery/mossgarden2.jpg" alt="mossgarden2.jpg" onclick="showfullpicture('mossgarden.jpg', 'Another moss garden')">
-        </div> -->
 
-    </div>
-
-</article>
-    <script src="index.js"></script>
+    </article>
+    <script src="gallery.js"></script>
 
 </body>
 

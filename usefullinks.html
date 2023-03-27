@@ -9,60 +9,68 @@
 
 
 <body>
+
     <div class="nav-container">
         <img class="logo" src="Resources/logo.png">
         <a href="index.html"><button class="green-button">Homepage</button></a>
         <a href="whymosses.html"><button class="green-button">Why mosses</button></a>
         <a href="gallery.html"><button class="green-button">Gallery</button></a>
         <button class="green-button-current">Useful links</button>
-        <button class="green-button" style="margin-left: auto;">Search</button>
+        <div style="margin-left:auto">
+        <input id="searchInput" type="text"/>
+        <button class="green-button" onclick="searchWebsite()">Search</button>
+        <script src="search.js"></script>
+        </div>
     </div>
 
-    
     <div style="display: inline-block; margin-left:200px;">
         <h1>Interesting videos:</h1>
         <div class="content-container">
-            <iframe width="300" src="https://www.youtube.com/embed/ryXZam912vg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+            <!-- TEMPORARY SOLUTION -->
+            <a href="https://www.youtube.com/watch?v=ryXZam912vg">
+                <img src="https://img.youtube.com/vi/ryXZam912vg/0.jpg" width="200" alt="Video 1 Thumbnail">
+              </a>
+              <a href="https://www.youtube.com/watch?v=l2VGHKmlkcw">
+                <img src="https://img.youtube.com/vi/l2VGHKmlkcw/0.jpg" width="200" alt="Video 2 Thumbnail">
+              </a>
+              <a href="https://www.youtube.com/watch?v=BcERKhSKnaQ">
+                <img src="https://img.youtube.com/vi/BcERKhSKnaQ/0.jpg" width="200" alt="Video 3 Thumbnail">
+              </a>
+              <a href="https://www.youtube.com/watch?v=hJAmG1pHqho">
+                <img src="https://img.youtube.com/vi/hJAmG1pHqho/0.jpg" width="200" alt="Video 4 Thumbnail">
+              </a>
+
+            <!-- <iframe width="300" src="https://www.youtube.com/embed/ryXZam912vg" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <iframe width="300" src="https://www.youtube.com/embed/l2VGHKmlkcw" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <iframe width="300" src="https://www.youtube.com/embed/BcERKhSKnaQ" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <iframe width="300" src="https://www.youtube.com/embed/hJAmG1pHqho" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
         </div>
     </div>
 
     <div style="display: inline-block; margin-left:200px;">
         <h1>Websites worth visiting:</h1>
         <div class="content-container">
+            <div class="grid-item"><a href="https://www.jstor.org/journal/bryologist">
+                <img style="border-radius: 100%;" src="Resources/bryo.png" width="150"></a>
+                <div style="margin-left:10px;"> The <br> Bryologist <br> Journal</div>
+            </div>
 
-            <div class="grid-item"><a href="https://www.jstor.org/journal/bryologist"><img style="border-radius: 100%;"
-                        src="Resources/bryo.png" width="150"></a> <div style="margin-left:10px;"> The <br> Bryologist <br> Journal</div> </div>
-
-                       
-            
-
-            <div class="grid-item"> <a href="https://www.britishbryologicalsociety.org.uk/"><img class="grid-item"
-                        src="Resources/bbs-logo.png" width="150"></a> <div style="margin-left:10px;"> British <br> Bryological <br> Society</div></div>
-
-            
-
+            <div class="grid-item"> <a href="https://www.britishbryologicalsociety.org.uk/">
+                <img class="grid-item" src="Resources/bbs-logo.png" width="150"></a>
+                <div style="margin-left:10px;"> British <br> Bryological <br> Society</div>
+            </div>
         </div>
     </div>
-
-
-
-
-
+    <article>
+    </article>
 </body>
-
 </html>

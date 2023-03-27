@@ -1,2 +1,2 @@
 # Mosspedia
-A simple project to create a website about mosses
+A simple vanilla JS project to create a website about mosses.
