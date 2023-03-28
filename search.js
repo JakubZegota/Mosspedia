@@ -7,20 +7,37 @@ const websitesArray = [
 
 function searchWebsite() {
     const inputText = document.getElementById("searchInput").value;
+    const resultsScreen = document.createElement('article');
+    const searchResultsTitle = document.createElement('h1');
+    searchResultsTitle.textContent = "Search results for: " + inputText;
+    resultsScreen.appendChild(searchResultsTitle);
 
     for (let website of websitesArray) {
+
         fetchWebsite(website.websiteLink)
             .then(websiteContent => {
                 if (websiteContent.toLowerCase().includes(inputText.toLowerCase())) {
-                    console.log(inputText, website.websiteName);
-                    searchOutput(inputText.toLowerCase(), websiteContent.toLowerCase());
+                    const resultsLink = document.createElement('a')
+                    resultsLink.href = website.websiteLink;
+                    const outputText = searchOutput(inputText.toLowerCase(), websiteContent.toLowerCase());
+                    resultsLink.textContent = website.websiteName + " (" + outputText + ")";
+                    resultsScreen.appendChild(resultsLink);
+                    resultsScreen.appendChild(document.createElement('br'));
                 }
             })
             .catch(error => {
                 console.log(error);
+                const resultsNone = document.createElement('div');
+                resultsNone.textContent = "no results";
+                resultsScreen.appendChild(resultsNone);
             });
+
     }
+    
+    document.body.appendChild(resultsScreen);
 }
+
+
 
 function fetchWebsite(websiteURL) {
     return fetch(websiteURL)
@@ -43,17 +60,17 @@ function searchOutput(phrase, textToScan) {
     let startPositon = leftPosition - 20;
     let lengthOfString = phrase.length + 40;
     let outputText;
-  
+
     if (startPositon < 0) {
         startPositon = 0;
     }
-    
-    if (startPositon+lengthOfString > containingText.length){
-        outputText = "..." + containingText.substr(startPositon)+"...";
-    }else{
+
+    if (startPositon + lengthOfString > containingText.length) {
+        outputText = "..." + containingText.substr(startPositon) + "...";
+    } else {
         outputText = "..." + containingText.substr(startPositon, lengthOfString) + "...";
     }
 
-    console.log(outputText);
+    return outputText;
 
 }

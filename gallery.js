@@ -52,8 +52,6 @@ function showfullpicture(img) {
   imageDescriptionContainer.textContent = imageDescription;
   imageDescriptionContainer.classList.add('image-description');
 
-  // const newLine = document.createElement('br');
-
   //BUTTON TO CLOSE IMAGE
   const closeImageButton = document.createElement('button');
   closeImageButton.classList.add('red-button');
