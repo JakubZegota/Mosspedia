@@ -3,6 +3,7 @@ const websitesArray = [
     src2 = { websiteLink: "gallery.html", websiteName: "Gallery" },
     src3 = { websiteLink: "usefullinks.html", websiteName: "Useful Links" },
     src4 = { websiteLink: "whymosses.html", websiteName: "Why mosses" },
+    src5 = { websiteLink: "articles.html", websiteName: "Articles" }
 ];
 
 function searchWebsite() {
@@ -20,6 +21,7 @@ function searchWebsite() {
                     const resultsLink = document.createElement('a')
                     resultsLink.href = website.websiteLink;
                     const outputText = searchOutput(inputText.toLowerCase(), websiteContent.toLowerCase());
+                    resultsScreen.appendChild(document.createElement('br'));
                     resultsLink.textContent = website.websiteName + " (" + outputText + ")";
                     resultsScreen.appendChild(resultsLink);
                     resultsScreen.appendChild(document.createElement('br'));
@@ -33,8 +35,21 @@ function searchWebsite() {
             });
 
     }
-    
-    document.body.appendChild(resultsScreen);
+
+    const fullScreenSearchResults = document.createElement('div');
+    fullScreenSearchResults.classList.add('search-results');
+
+    const closeSearchResults = document.createElement('button');
+    closeSearchResults.classList.add('red-button');
+    closeSearchResults.textContent = "close";
+    closeSearchResults.addEventListener('click', function () {
+        document.body.removeChild(fullScreenSearchResults);
+    });
+
+    resultsScreen.appendChild(closeSearchResults);
+    resultsScreen.appendChild(document.createElement('br'));
+    fullScreenSearchResults.appendChild(resultsScreen);
+    document.body.appendChild(fullScreenSearchResults);
 }
 
 
