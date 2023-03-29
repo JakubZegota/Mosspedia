@@ -12,7 +12,7 @@
 <body>
     <div class="nav-container">
         <img class="logo" src="Resources/logo.png">
-        <button class="green-button">Homepage</button>
+        <a href="index.html"><button class="green-button">Homepage</button></a>
         <a href="whymosses.html"><button class="green-button">Why mosses</button></a>
         <a href="gallery.html"><button class="green-button">Gallery</button></a>
         <a href="usefullinks.html"><button class="green-button">Useful links</button></a>
@@ -21,20 +21,21 @@
             <input id="searchInput" type="text" />
             <button class="green-button" onclick="searchWebsite()">Search</button>
             <script src="Scripts/search.js"></script>
-            
+
         </div>
     </div>
-    
-    <article>
-        
 
-        <h1>Read some interesting articles about moss</h1>
+    <article>
+
+
+
         <div class="articles-container">
-            <div class="primary-article">
-                <!-- PRIMARY ARTICLE -->
+
+            <div class="articles-welcome">
+                <h1>Read some interesting articles about moss</h1>
             </div>
             <div id="previous-article-button">
-               <!-- PREVIOUS BUTTON -->
+                <!-- PREVIOUS BUTTON -->
             </div>
             <div class="secondary-article" id="secondary-article">
                 <!-- SECONDARY ARTICLE -->
@@ -42,8 +43,12 @@
             <div id="next-article-button">
                 <!-- NEXT BUTTON -->
             </div>
+
+            <div id="primary-article" class="primary-article">
+                <!-- PRIMARY ARTICLE -->
+            </div>
         </div>
-        
+
     </article>
 
     <script src="Scripts/articles.js"></script>

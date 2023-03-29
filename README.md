@@ -1,2 +1,10 @@
 # Mosspedia
-A simple vanilla JS project to create a website about mosses.
+A simple project to create a website about mosses, in order to learn more HTML, CSS and vanilla JS.
+
+Most information (articles content etc) about moss on the website is AI generated.
+Thought it would be better to test it this way instead of using lorem ipsum.
+Take it with a grain of salt.
+
+
+WHAT TO ADD:
+-Search.js does not search for the phrase inside the articles.

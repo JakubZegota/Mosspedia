@@ -35,15 +35,10 @@ for (const image of imagesArray) {
   if (i === 3) i = 0;
 }
 
-
 function showfullpicture(img) {
-
   imageSrc = img.imgSource;
   imageDescription = img.description;
-
-
   imageUrl = "Gallery/" + imageSrc;
-
   const fullscreenImage = document.createElement('div');
   fullscreenImage.classList.add('full-screen-image');
 
