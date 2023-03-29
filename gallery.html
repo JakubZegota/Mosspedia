@@ -7,32 +7,19 @@
     <title>Mosspedia</title>
 </head>
 
-
 <body>
-    <div class="nav-container">
-        <img class="logo" src="Resources/logo.png">
-        <a href="index.html"><button class="green-button">Homepage</button></a>
-        <a href="whymosses.html"><button class="green-button">Why mosses</button></a>
-        <button class="green-button-current">Gallery</button>
-        <a href="usefullinks.html"><button class="green-button">Useful links</button></a>
-        <a href="articles.html"><button class="green-button">Articles</button></a>
-        <div style="margin-left:auto">
-        <input id="searchInput" type="text"/>
-        <button class="green-button" onclick="searchWebsite()">Search</button>
-        <script src="Scripts/search.js"></script>
-        </div>
-    </div>
+
+    <div id="nav-container" class="nav-container"></div>
+    <script src="Scripts/navcontainer.js"></script>
+    <script>generateNavContainer("gallery.html");</script>
 
     <article>
         <h1>Gallery</h1>
-
         <div id="galery-container" class="gallery">
             <!-- The container for the photos -->
         </div>
-
     </article>
     <script src="Scripts/gallery.js"></script>
-
 </body>
 
 </html>

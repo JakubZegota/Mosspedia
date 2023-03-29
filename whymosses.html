@@ -8,52 +8,42 @@
     <title>Mosspedia</title>
 </head>
 
-
 <body>
-    <div class="nav-container">
-        <img class="logo" src="Resources/logo.png">
-        <a href="index.html"><button class="green-button">Homepage</button></a>
-        <button class="green-button-current">Why mosses</button>
-        <a href="gallery.html"><button class="green-button">Gallery</button></a>
-        <a href="usefullinks.html"><button class="green-button">Useful links</button></a>
-        <a href="articles.html"><button class="green-button">Articles</button></a>
-        <div style="margin-left:auto">
-        <input id="searchInput" type="text"/>
-        <button class="green-button" onclick="searchWebsite()">Search</button>
-        <script src="Scripts/search.js"></script>
-        </div>
-    </div>
+   
+    <div id="nav-container" class="nav-container"></div>
+    <script src="Scripts/navcontainer.js"></script>
+    <script>generateNavContainer("whymosses.html");</script>
 
     <article>
         <h1>Why mosses?</h1>
-
         <div>
-           
             <p> Mosses are often overlooked and considered just a simple green carpet covering rocks, soil, and trees.
                 However, these tiny plants play a crucial role in our ecosystems and have many fascinating
                 characteristics that make them worth exploring. </p>
             <p> As one of the oldest living plant groups on Earth, mosses have been around for over 400 million years,
                 surviving through countless environmental changes. They can grow in diverse conditions from arctic
-                tundras to tropical rainforests, and can even survive in deserts and marine habitats. Their adaptability and
+                tundras to tropical rainforests, and can even survive in deserts and marine habitats. Their adaptability
+                and
                 resilience make them a fascinating subject of study.</p>
             <p> But why should we care about mosses? First of all, they play a vital role in maintaining healthy
-                ecosystems. They provide crucial habitats and food sources for various species of insects, birds, and mammals. They
+                ecosystems. They provide crucial habitats and food sources for various species of insects, birds, and
+                mammals. They
                 also help to stabilize soils and prevent erosion, which is particularly important in areas prone to
                 landslides and flooding. </p>
             <p> Moreover, mosses have long been used for medicinal and cultural purposes by indigenous communities
-                around the world. They have antibacterial properties and are used to treat wounds and skin diseases. Many
+                around the world. They have antibacterial properties and are used to treat wounds and skin diseases.
+                Many
                 cultures also incorporate mosses into their traditional art and rituals.</p>
             <p> Despite their ecological and cultural significance, mosses remain largely understudied and
-                underappreciated. At our website, we aim to change that. We believe that by raising awareness about the importance of
+                underappreciated. At our website, we aim to change that. We believe that by raising awareness about the
+                importance of
                 mosses, we can encourage more people to appreciate and protect these ancient and amazing plants.</p>
             <p> So, join us on this journey to explore the wonderful world of mosses and discover why they are worth our
                 attention and admiration. </p>
-            
-        </div>
-        <br><br>
+        </div><br><br>
         <a class="normal-button" href="https://en.wikipedia.org/wiki/Moss">Read more about moss on
             Wikipedia.</a><br><br>
     </article>
-
 </body>
+
 </html>
