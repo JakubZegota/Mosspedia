@@ -157,6 +157,7 @@ body {
 }
 
 .articles-container{
+    margin-top: 100px;
     width: 50vw;
     display: flex;
     flex-direction: row;
@@ -170,12 +171,6 @@ body {
     padding: 20px 20px 100px 0;
     /* text-align: center; */
     justify-content: center;
-}
-
-.articles-welcome{
-    flex-basis: 100%; 
-    text-align: center;
-
 }
 
 
