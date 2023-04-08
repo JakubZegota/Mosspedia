@@ -62,7 +62,7 @@ function showfullpicture(img) {
   image.style.maxWidth = '700px';
   image.style.maxHeight = '700px';
   image.style.borderRadius = '20px';
-  image
+  image.style.marginLeft = '200px';
 
   //BUTTON FOR NEXT PICTURE
   const nextPictureButton = document.createElement('button');
